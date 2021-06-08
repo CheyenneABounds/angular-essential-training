@@ -2,6 +2,11 @@ import { Component } from '@angular/core';
 
 @Component({
     selector: 'mw-app',
-    templateUrl: './app.component.html' 
+    templateUrl: './app.component.html',
+    styles: [`
+        h1 {
+            color: #ffffff;
+        }
+    `]
 })
 export class AppComponent {}
