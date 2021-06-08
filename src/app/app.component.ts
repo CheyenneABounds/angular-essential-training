@@ -4,9 +4,7 @@ import { Component } from '@angular/core';
     selector: 'mw-app',
     templateUrl: './app.component.html',
     styles: [`
-        h1 {
-            color: #ffffff;
-        }
+      h1 { color: #ffffff; }
     `]
 })
 export class AppComponent {}
