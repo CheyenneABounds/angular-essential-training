@@ -5,7 +5,7 @@ import { MediaItemListComponent } from './media-item-list.component';
 const appRoutes: Routes = [
     { path: 'add', component: MediaItemFormComponent },
     { path: ':medium', component: MediaItemListComponent },
-    { path: '', redirectTo: 'all', pathMatch: 'full' }
+    { path: '', pathMatch: 'full', redirectTo: 'all' }
 ];
 
 export const routing = RouterModule.forRoot(appRoutes);
