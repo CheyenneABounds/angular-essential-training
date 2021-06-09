@@ -1,5 +1,5 @@
 <header [ngClass]="{'medium-movies':medium === 'Movies', 'medium-series':medium === 'Series'}">
-    <h2>{{medium}}</h2>
+    <h2>{{ medium }}</h2>
     <div *ngIf="mediaItems">{{ mediaItems | categoryList }}</div>
 </header>
 <section>
@@ -8,3 +8,8 @@
         *ngFor="let mediaItem of mediaItems" [mediaItem]="mediaItem" (delete)="onMediaItemDelete($event)">
     </mw-media-item>
 </section>
+<footer>
+    <a routerLink="/add">
+        <img src="assets/01.png" class="icon">
+    </a>
+</footer>
