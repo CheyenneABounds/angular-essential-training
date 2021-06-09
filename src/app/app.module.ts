@@ -1,4 +1,4 @@
-
+import { routing } from './app.routing';
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { ReactiveFormsModule } from '@angular/forms';
@@ -16,7 +16,8 @@ import { MockXHRBackend } from './mock-xhr-backend';
     imports: [
         BrowserModule,
         ReactiveFormsModule,
-        HttpClientModule
+        HttpClientModule,
+        routing
     ],
     declarations: [
         AppComponent,
