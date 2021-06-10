@@ -1,3 +1,4 @@
+
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { HttpClientModule, HttpXhrBackend } from '@angular/common/http';
@@ -9,6 +10,7 @@ import { CategoryListPipe } from './category-list.pipe';
 import { lookupListToken, lookupLists } from './providers';
 import { MockXHRBackend } from './mock-xhr-backend';
 import { routing } from './app.routing';
+import { CategoryListComponent } from './category-list.component';
 
 @NgModule({
     imports: [
@@ -20,6 +22,7 @@ import { routing } from './app.routing';
         AppComponent,
         MediaItemComponent,
         MediaItemListComponent,
+        CategoryListComponent,
         FavoriteDirective,
         CategoryListPipe
     ],
