@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/explicit-module-boundary-types */
 import { Directive, HostBinding, HostListener, Input } from '@angular/core';
 
 @Directive({
@@ -5,7 +6,7 @@ import { Directive, HostBinding, HostListener, Input } from '@angular/core';
 })
 
 export class FavoriteDirective {
-    @HostBinding('class.is-favorite') isFavorite =true;
+    @HostBinding('class.is-favorite') isFavorite = true;
     @HostBinding('class.is-favorite-hovering') hovering = false;
     @HostListener('mouseenter') onMouseEnter() {
         this.hovering = true;
@@ -13,7 +14,7 @@ export class FavoriteDirective {
     @HostListener('mouseleave') onMouseLeave() {
         this.hovering = false;
     }
-    @Input() set mwFavorite(value) {
+    @Input() set mwFavorite(value: boolean) {
         this.isFavorite = value;
     }
 }
